@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)https://timerapp-d48c9.web.app/ -->
+<html class="gr__timerapp-d48c9_web_app"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jane Tetris</title>
+
+    <!-- update the version number as needed -->
+    <script defer="" src="./index_files/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer="" src="./index_files/firebase-auth.js"></script>
+    <script defer="" src="./index_files/firebase-database.js"></script>
+    <script defer="" src="./index_files/firebase-messaging.js"></script>
+    <script defer="" src="./index_files/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer="" src="./index_files/init.js"></script>
+    <style> @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');</style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="login.js"></script>
+  <body data-gr-c-s-loaded="true">
+    <div id="topnav" style="background-color:black; margin:0px; padding:45px;">
+      <h1 style="color:white; font-family: &#39;Roboto&#39;, sans-serif;">Jane Tetris App v0.2</h1>
+      <button onclick="googleSignIn()" style="float:right; display:block;">Google SignIn</button>
+      <button style="float:right; display:none;">Sign Out</button>
+      <button>Change Car</button>  <img src="assets/cars/png/Civilian/Blue/Sedan 1/carBlue2_008.png">
+    </div>
+
+<!-- initialize firebase -->
+<script>
+  var config = {
+  apiKey: "",
+  authDomain: "",
+  projectId: "",
+  storageBucket: "",
+  messagingSenderId: "",
+};
+firebase.initializeApp(config);
+
+
+</script>
+
+<div class="row" style="padding: 20px;">
+  <div class="col-1">
+
+  </div>
+  <div class="col-6" style="min-width: 500px;">
+    <img src="assets/images/map.png" width="500px;">
+
+  </div>
+  <div class="col-5">
+
+
+  </div>
+</div>
+
+<div class="row" style="padding: 20px;">
+  <div class="col-6">
+    <img src="assets/cars/png/Civilian/Blue/Sedan 1/carBlue2_008.png">
+ <br>Alex</td>
+  </div>
+<div class="col-6" style="width: 500px; margin-left: 30%;">
+<form class="form-horizontal">
+<fieldset>
+
+<!-- Form Name -->
+<legend>Lets Park!</legend>
+
+<!-- Multiple Radios -->
+<div class="form-group">
+<label class="col-md-4 control-label" for="leaving_at">Leaving at:</label>
+<div class="col-md-4">
+<div class="radio">
+<label for="leaving_at-0">
+<input type="radio" name="leaving_at" id="leaving_at-0" value="3" checked="checked">
+3:00 PM
+</label>
+</div>
+<div class="radio">
+<label for="leaving_at-1">
+<input type="radio" name="leaving_at" id="leaving_at-1" value="4">
+4:00 PM
+</label>
+</div>
+<div class="radio">
+<label for="leaving_at-2">
+<input type="radio" name="leaving_at" id="leaving_at-2" value="5">
+5:00 PM
+</label>
+</div>
+<div class="radio">
+<label for="leaving_at-3">
+<input type="radio" name="leaving_at" id="leaving_at-3" value="6">
+6:00 PM
+</label>
+</div>
+</div>
+</div>
+
+<!-- Button -->
+<div class="form-group">
+<div class="col-md-4">
+<button id="park" name="park" class="btn btn-success">Park</button>
+</div>
+</div>
+
+</fieldset>
+</form>
+</div>
+</div>
+
+
+
+</body></html>
